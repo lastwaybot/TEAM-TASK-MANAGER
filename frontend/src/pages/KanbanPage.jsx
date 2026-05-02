@@ -29,7 +29,7 @@ export default function KanbanPage() {
 
   useEffect(() => {
     Promise.all([api.get('/tasks'), api.get('/projects')])
-      .then(([t, p]) => { setTasks(t.data); setProjects(p.data); })
+      .then(([t, p]) => { setTasks(Array.isArray(t.data) ? t.data : []); setProjects(Array.isArray(p.data) ? p.data : []); })
       .catch(() => {})
       .finally(() => setLoading(false));
   }, []);

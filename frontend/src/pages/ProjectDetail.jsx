@@ -30,7 +30,7 @@ export default function ProjectDetail() {
   useEffect(() => {
     setLoading(true);
     Promise.all([api.get(`/projects/${id}`), api.get(`/tasks?projectId=${id}`)])
-      .then(([p, t]) => { setProject(p.data); setTasks(t.data); })
+      .then(([p, t]) => { setProject(p.data); setTasks(Array.isArray(t.data) ? t.data : []); })
       .catch(() => setError('Failed to load'))
       .finally(() => setLoading(false));
   }, [id]);

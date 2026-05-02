@@ -15,7 +15,7 @@ export default function TaskListPage() {
   const [search, setSearch] = useState('');
   const [page, setPage] = useState(1);
 
-  useEffect(() => { api.get('/tasks').then(r => setTasks(r.data)).catch(() => {}).finally(() => setLoading(false)); }, []);
+  useEffect(() => { api.get('/tasks').then(r => setTasks(Array.isArray(r.data) ? r.data : [])).catch(() => {}).finally(() => setLoading(false)); }, []);
 
   const handleStatus = async (id, status) => {
     try {
