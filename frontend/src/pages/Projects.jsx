@@ -16,7 +16,7 @@ function Projects() {
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
-    api.get('/projects').then(r => setProjects(r.data)).catch(() => setError('Failed to load projects')).finally(() => setLoading(false));
+    api.get('/projects').then(r => setProjects(Array.isArray(r.data) ? r.data : [])).catch(() => setError('Failed to load projects')).finally(() => setLoading(false));
   }, []);
 
   const handleCreate = async (e) => {
