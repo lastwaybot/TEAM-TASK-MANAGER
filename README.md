@@ -218,46 +218,6 @@ All protected endpoints require `Authorization: Bearer <firebase-id-token>` head
 
 ---
 
-## 🌐 Deployment
-
-### Deploy Backend on Railway
-
-1. Push `backend/` to a GitHub repository
-2. Go to [Railway](https://railway.app/) → New Project → Deploy from GitHub
-3. Select the repository and set the root directory to `backend`
-4. Add environment variables in Railway dashboard:
-   - `PORT` → `5000`
-   - `FIREBASE_PROJECT_ID`
-   - `FIREBASE_CLIENT_EMAIL`
-   - `FIREBASE_PRIVATE_KEY`
-5. Railway will auto-detect Node.js and deploy
-6. Copy the generated deployment URL (e.g., `https://your-backend.up.railway.app`)
-
-### Deploy Frontend on Railway
-
-1. Push `frontend/` to a GitHub repository (can be same repo)
-2. Create another Railway service → Deploy from GitHub
-3. Set root directory to `frontend`
-4. Add build command: `npm run build`
-5. Add start command: `npx serve dist`
-6. Add environment variables:
-   - `VITE_API_URL` → your Railway backend URL
-   - All `VITE_FIREBASE_*` variables
-7. Deploy
-
-### Alternative: Deploy Frontend on Firebase Hosting
-
-```bash
-cd frontend
-npm run build
-npm install -g firebase-tools
-firebase login
-firebase init hosting    # Select "dist" as public directory, configure as SPA
-firebase deploy
-```
-
----
-
 ## 🔥 Firestore Collections
 
 ### `users`
