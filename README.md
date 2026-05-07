@@ -1,4 +1,4 @@
-# 📋 Team Task Manager
+
 
 A full-stack web application for creating projects, assigning tasks, and tracking progress with **role-based access control** (Admin / Member).
 
@@ -14,6 +14,15 @@ A full-stack web application for creating projects, assigning tasks, and trackin
 - **Deadline Tracking** — Visual overdue indicators for missed deadlines
 - **Responsive UI** — Clean, modern design that works on desktop and mobile
 
+<img width="1915" height="891" alt="Screenshot 2026-05-03 025710" src="https://github.com/user-attachments/assets/7a8491dd-05e6-48a9-84d1-73b41e31fafd" />
+<img width="1919" height="905" alt="Screenshot 2026-05-07 101906" src="https://github.com/user-attachments/assets/880da11a-0c29-45c6-ae24-51f98221fcbd" />
+<img width="1919" height="916" alt="Screenshot 2026-05-07 101846" src="https://github.com/user-attachments/assets/b847fd3f-6c11-4f4b-afb4-9ed13ca2ed7e" />
+<img width="1919" height="915" alt="Screenshot 2026-05-07 101738" src="https://github.com/user-attachments/assets/e9891a88-e2d1-4170-838f-3f646fccc97c" />
+<img width="1919" height="912" alt="Screenshot 2026-05-07 101555" src="https://github.com/user-attachments/assets/6a7e67d5-eea7-47fb-b7ed-cb957716eaa5" />
+<img width="1919" height="882" alt="Screenshot 2026-05-07 101545" src="https://github.com/user-attachments/assets/f60c4581-bc02-43a9-90e1-8da286ce81a3" />
+<img width="1919" height="878" alt="Screenshot 2026-05-07 101512" src="https://github.com/user-attachments/assets/d615cc51-e865-4656-b3a5-301db1bf96f2" />
+
+# 📋 Team Task Manager
 ### Role Permissions
 
 | Action | Admin | Member |
